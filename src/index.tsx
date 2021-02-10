@@ -1,10 +1,10 @@
 import React, {FC} from "react";
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom";
+import App from './App';
 
-const App: FC = () => {
-    return(
-        <div>React Webpack</div>
-    )
-}
-
-ReactDOM.render(<App/>, document.getElementById("root"))
+ReactDOM.render(
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>, 
+    document.getElementById("root")
+)
